@@ -1,8 +1,8 @@
-module.exports = function check(str, bracketsConfig) {
-for (let i = 0; i <= bracketsConfig.length - 1;) {
-  let pattern = bracketsConfig[i].join('');
-  if (newstrng.includes(pattern)) {
-  newstring = newstring.replace(pattern, '');
+module.exports = function check(newstring, bracketsConfig) {
+  for (var i = 0; i <= bracketsConfig.length - 1;) {
+  var a = bracketsConfig[i].join('');
+  if (newstring.includes(a)) {
+  newstring = newstring.replace(a, '');
   i = 0;
   } else {
   i = i + 1;
@@ -13,4 +13,5 @@ for (let i = 0; i <= bracketsConfig.length - 1;) {
   } else {
   return false;
   }
-}
+  }
+  
